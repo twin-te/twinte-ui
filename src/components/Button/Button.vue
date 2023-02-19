@@ -69,7 +69,7 @@ export default defineComponent({
 </template>
 
 <style scoped lang="scss">
-@import "../styles";
+@import "~/styles";
 .button {
   display: flex;
   flex-direction: row;
