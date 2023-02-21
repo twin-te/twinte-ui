@@ -2,7 +2,6 @@ import { Story } from "@storybook/vue3";
 import Button from "./Button.vue";
 
 export default {
-  title: "Components/Button",
   component: Button,
   parameters: {
     layout: "padded",
@@ -37,6 +36,7 @@ const Template: Story = (args) => ({
 });
 
 export const Default = Template.bind({});
+
 Default.args = {
   slot: "現在の学期",
   size: "medium",

@@ -1,6 +1,8 @@
 # twinte-ui
 - [vite library mode](https://vitejs.dev/guide/build.html#library-mode)
 - [storybook](https://storybook.js.org/docs/vue/get-started/introduction)
+- [vue.js testing](https://vuejs.org/guide/scaling-up/testing.html)
+- [vitest](https://vitest.dev/)
 
 ## Get Started
 
@@ -16,6 +18,9 @@
 
 ### Build Components
 1. `yarn build`
+
+### Tests
+1. `yarn test`
 
 ## Vue 3 + TypeScript + Vite
 

@@ -1,3 +1,6 @@
+/// <reference types="vitest" />
+
+import path from "path";
 import { defineConfig } from "vite";
 import vue from "@vitejs/plugin-vue";
 import dts from "vite-plugin-dts";
@@ -18,5 +21,14 @@ export default defineConfig({
       external: ["vue"],
     },
   },
+  resolve: {
+    alias: {
+      "~": path.resolve(__dirname, "src"),
+    },
+  },
   plugins: [vue(), dts()],
+  test: {
+    globals: true,
+    environment: "happy-dom",
+  },
 });
